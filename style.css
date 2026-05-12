@@ -329,30 +329,35 @@ img.about-photo { width: 100%; height: 100%; object-fit: cover; border-radius: v
 }
 
 .project-photo-wrap {
-  display: grid;
-  grid-template-rows: 1fr 90px;
-  gap: 6px;
-  padding: 8px;
   background: var(--beige);
-  height: 320px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow: hidden;
 }
 .project-photo {
-  width: 100%;
-  height: 100%;
+  display: block;
   object-fit: cover;
   object-position: top;
   border-radius: 10px;
   border: 1px solid var(--border);
   background: var(--card-bg);
+  margin: 0;
 }
-.project-photo.main { height: 100%; }
+.project-photo.main {
+  width: 100%;
+  height: 220px;
+}
 .project-photo-strip {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6px;
-  min-height: 0;
 }
-.project-photo.thumb { height: 100%; }
+.project-photo.thumb {
+  width: 100%;
+  height: 90px;
+}
 
 .project-body {
   padding: 1.75rem;
