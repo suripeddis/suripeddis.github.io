@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saumya Suripeddi — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-photo-wrap">
+        <!-- Replace this div with: <img src="your-photo.jpg" alt="Saumya" class="hero-photo" /> -->
+        <div class="photo-placeholder hero-photo">
+          <span>📷</span>
+          <p>Your photo here</p>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">Computer Science · AI Concentration · Northeastern University</p>
+        <h1 class="hero-name">Saumya<br />Suripeddi</h1>
+        <p class="hero-tagline">Building technology that <em>actually helps people.</em></p>
+        <div class="hero-links">
+          <a href="mailto:suripeddi.s@northeastern.edu" class="pill-btn">Email me</a>
+          <a href="https://linkedin.com/in/saumya-suripeddi" target="_blank" class="pill-btn outline">LinkedIn</a>
+          <a href="https://github.com/suripeddis" target="_blank" class="pill-btn outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="section" id="about">
+    <div class="container two-col">
+      <div class="about-text card pop">
+        <span class="tag">About me</span>
+        <h2>CS student who cares <em>deeply</em> about impact.</h2>
+        <p>I'm a 21-year-old Computer Science major at Northeastern University, concentrating in Artificial Intelligence. What drives me isn't just the technology — it's the intersection of innovation and real human good. I want every line of code I write to make someone's life better.</p>
+        <p>Whether it's helping non-speaking students communicate or building tools that bring people clarity and peace of mind, I'm drawn to the problems that matter most.</p>
+      </div>
+      <div class="about-photos">
+        <!-- Replace with <img src="photo1.jpg" alt="" class="about-photo pop" /> -->
+        <div class="photo-placeholder about-photo pop">
+          <span>🌿</span>
+          <p>Add a photo</p>
+        </div>
+        <!-- Replace with <img src="photo2.jpg" alt="" class="about-photo small pop" /> -->
+        <div class="photo-placeholder about-photo small pop">
+          <span>✨</span>
+          <p>Add a photo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="section alt" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Projects</span>
+        <h2>Things I've built.</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card pop">
+          <div class="project-photo-wrap">
+            <img src="aac-dashboard.png" alt="AAC session analytics dashboard" class="project-photo main" />
+            <div class="project-photo-strip">
+              <img src="aac-timeline.png" alt="Session timeline and trends" class="project-photo thumb" />
+              <img src="aac-prompts.png" alt="Individual prompt log" class="project-photo thumb" />
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag ai">AI · Accessibility</span>
+              <span class="project-status done">Shipped</span>
+            </div>
+            <h3>AAC Communication Classifier</h3>
+            <p>Built an AI-powered classifier for Augmentative and Alternative Communication (AAC) tools, designed to support non-speaking and minimally speaking students. This module integrates into a larger assistive app, helping these students communicate more independently.</p>
+            <ul class="feature-list">
+              <li>Trained and evaluated a classification model for AAC symbol/phrase recognition</li>
+              <li>Designed for real-world use in educational and therapeutic settings</li>
+              <li>Integrated as a core module of a larger assistive technology platform</li>
+            </ul>
+            <div class="project-actions">
+              <span class="pill-btn small muted">More details coming soon</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card pop">
+          <div class="project-photo-wrap">
+            <img src="reflect-write.png" alt="Reflect journal entry view" class="project-photo main" />
+            <div class="project-photo-strip">
+              <img src="reflect-entries.png" alt="Past entries with sentiment" class="project-photo thumb" />
+              <img src="reflect-insights.png" alt="Weekly insights and themes" class="project-photo thumb" />
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag cloud">AWS · Full Stack</span>
+              <span class="project-status wip">In Progress</span>
+            </div>
+            <h3>Reflect — Cloud Journaling App</h3>
+            <p>A personal journaling application built on AWS — exploring cloud architecture, serverless functions, and secure data storage. The goal: a clean, private space for reflection, accessible anywhere.</p>
+            <ul class="feature-list">
+              <li>Serverless backend with AWS Lambda &amp; DynamoDB</li>
+              <li>Secure, private entries with user authentication</li>
+              <li>Sentiment tagging and weekly insight summaries</li>
+            </ul>
+            <div class="project-actions">
+              <span class="pill-btn small muted">In progress</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Skills &amp; Tools</span>
+        <h2>What I work with.</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card pop"><span class="skill-icon">🤖</span><span>Machine Learning</span></div>
+        <div class="skill-card pop"><span class="skill-icon">🐍</span><span>Python</span></div>
+        <div class="skill-card pop"><span class="skill-icon">☁️</span><span>AWS</span></div>
+        <div class="skill-card pop"><span class="skill-icon">🔬</span><span>Data Science</span></div>
+        <div class="skill-card pop"><span class="skill-icon">🧠</span><span>AI / Deep Learning</span></div>
+        <div class="skill-card pop"><span class="skill-icon">🗄️</span><span>SQL / Databases</span></div>
+        <div class="skill-card pop"><span class="skill-icon">🌐</span><span>Web Development</span></div>
+        <div class="skill-card pop"><span class="skill-icon">☕</span><span>Java</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PHOTO GALLERY ── -->
+  <section class="section alt" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Gallery</span>
+        <h2>A little bit of me.</h2>
+      </div>
+      <div class="gallery-grid">
+        <!-- Replace each div with <img src="..." alt="" class="gallery-photo pop tall" /> etc. -->
+        <div class="photo-placeholder gallery-photo pop tall"><span>🌸</span><p>Add photo</p></div>
+        <div class="photo-placeholder gallery-photo pop"><span>🌿</span><p>Add photo</p></div>
+        <div class="photo-placeholder gallery-photo pop"><span>✨</span><p>Add photo</p></div>
+        <div class="photo-placeholder gallery-photo pop wide"><span>🌙</span><p>Add photo</p></div>
+        <div class="photo-placeholder gallery-photo pop"><span>🎓</span><p>Add photo</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="section contact-section" id="contact">
+    <div class="container contact-inner">
+      <span class="tag">Let's connect</span>
+      <h2>I'd love to hear from you.</h2>
+      <p class="contact-sub">Whether it's a project, collaboration, or just a hello — my inbox is open.</p>
+      <a href="mailto:suripeddi.s@northeastern.edu" class="pill-btn large">suripeddi.s@northeastern.edu</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed &amp; built by Saumya Suripeddi · 2026</p>
+  </footer>
+
+</body>
+</html>
