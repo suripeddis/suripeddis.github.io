@@ -288,16 +288,7 @@ img.hero-photo {
 .hero-links { display: flex; gap: 0.75rem; flex-wrap: wrap; }
 
 /* ─── ABOUT ─── */
-.about-text { max-width: 520px; }
-
-.about-photos {
-  display: grid;
-  grid-template-rows: 280px 160px;
-  gap: 1rem;
-}
-.about-photo { border-radius: var(--radius); width: 100%; }
-.about-photo.small { height: 100%; }
-img.about-photo { width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius); }
+.about-text { width: 100%; }
 
 /* ─── PROJECTS ─── */
 .projects-grid {
@@ -357,6 +348,10 @@ img.about-photo { width: 100%; height: 100%; object-fit: cover; border-radius: v
 .project-photo.thumb {
   width: 100%;
   height: 90px;
+}
+.project-preview-soon {
+  width: 100%;
+  height: 316px;
 }
 
 .project-body {
@@ -419,16 +414,25 @@ img.about-photo { width: 100%; height: 100%; object-fit: cover; border-radius: v
 }
 .skill-icon { font-size: 1.6rem; }
 
-/* ─── GALLERY ─── */
-.gallery-grid {
+/* ─── CURRENTLY ─── */
+.currently-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 240px 240px;
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.25rem;
 }
-.gallery-photo { border-radius: var(--radius); width: 100%; height: 100%; object-fit: cover; border: 1px solid var(--border); }
-.gallery-photo.tall { grid-row: span 2; }
-.gallery-photo.wide { grid-column: span 2; }
+.currently-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-top: 2.5px solid transparent;
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+  cursor: default;
+}
+.currently-card:hover { border-top-color: var(--camel); }
+.currently-icon { font-size: 1.8rem; }
+.currently-card h3 { font-size: 1.15rem; margin: 0.75rem 0 0.4rem; }
+.currently-card p { font-size: 0.9rem; margin: 0; }
 
 /* ─── CONTACT ─── */
 .contact-section {
@@ -470,14 +474,9 @@ footer {
   .two-col { grid-template-columns: 1fr; }
   .about-photos { grid-template-rows: 220px 140px; }
   .projects-grid { grid-template-columns: 1fr; }
-  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
-  .gallery-photo.tall { grid-row: span 1; }
-  .gallery-photo.wide { grid-column: span 2; }
 }
 
 @media (max-width: 600px) {
   .section { padding: 64px 0; }
-  .gallery-grid { grid-template-columns: 1fr; }
-  .gallery-photo.wide { grid-column: span 1; }
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
 }
